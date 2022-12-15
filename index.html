@@ -4,29 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">-->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito:ital,wght@1,300;1,1000&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
   <title>Weather App</title>
 </head>
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <header class="p-2 mb-2 " id="navbar">
+        <h1 class="display-3 text-center">Weather App</h1>
+        <p class="lead text-center">A simple weather app for planning trips or weather updates throughout the day</p>
+        <p id="currentDay" class="lead text-center">0</p>
+    </header>
+    <main class="container my-2">
+        <section class="row">
+          <div class="search-div col-xs-12 col-lg-3">
+            <h2 class="search-head"> Search</h2>
+            <form id="search-form" class="form w-100">
+            <input id="search-input" class="form-input 
+            w-100" type="text"
+            placeholder="Search a city and press enter!">
+            <div>
+              <h5 class="history-header">Last Searched
+              </h5>
+              <ul class="list-group mb-2 pb-2" id="history" >
+              </ul>
+            </div>
+          </div>
+          <div class="col p-3 text-light" id="results-div">
+           <h2>Showing results for <span id="result-text"></span></h2>
+           <div id="result-content" class="result"></div>
+           <div id="forecast" class="row align-items-start"></div>
+           <div class="row align-items-start" id="forecast-body" > </div>
+           <div id='card-cont'></div>
+          </div>
+        </section>
+     </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/saveInputs.js"></script>
 </body>
 </html>
  
