@@ -54,7 +54,7 @@ const displayData = function () {
   let dataText = localStorage.getItem("dataStorage");
   let object = JSON.parse(dataText);
   let iconString =
-    "<img src=http://openweathermap.org/img/wn/" +
+    "<img src=https://openweathermap.org/img/wn/" +
     object.weather[0].icon +
     "@4x.png width=50px height=50px alt>";
   document.getElementById("result-text").innerHTML = object.name;
