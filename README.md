@@ -13,5 +13,5 @@ To search for a new city please refresh the page using CTRL+R and then search ne
 Your last searched city will be displayed on left hand side under search bar
 
 # Screenshot
-![READMESCREENSHOT](/weatherapp.jpg)
+![READMESCREENSHOT](/assets/weatherapp.jpg)
 
